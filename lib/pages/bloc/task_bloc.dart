@@ -1,5 +1,5 @@
 import 'dart:async';
-import 'dart:nativewrappers/_internal/vm/lib/math_patch.dart';
+import 'dart:math';
 
 import 'package:tasks/data/models/task_model.dart';
 import 'package:tasks/data/repositories/task_repository.dart';
@@ -35,7 +35,11 @@ class TaskBloc {
     } else if (event is PostTaskEvent) {
       try {
         tasks = await _taskRepository.addTask(
-          TaskModel(id: Random(5).hashCode, title: event.title, description: event.description),
+          TaskModel(
+            id: Random().nextInt(100),
+            title: event.title,
+            description: event.description,
+          ),
         );
         _outputTaskController.add(TaskLoadedState(tasks: tasks));
       } catch (e) {
