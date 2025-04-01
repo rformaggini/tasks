@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "968920513119",
+    "project_id": "hive-flatmates-fb",
+    "storage_bucket": "hive-flatmates-fb.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:968920513119:android:d2ec858c8faf1a83c1f9ea",
+        "android_client_info": {
+          "package_name": "com.yellowdot.bloctasks.tasks"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJV-8Iwq8Jt05RGNDL5mSQFhz6xgzrU4g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

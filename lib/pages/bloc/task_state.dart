@@ -15,7 +15,7 @@ class TaskLoadingState extends TaskState {
 }
 
 class TaskLoadedState extends TaskState {
-  TaskLoadedState({required List<TaskModel> tasks}) : super(tasks: tasks);
+  TaskLoadedState({required super.tasks});
 }
 
 class TaskErrorState extends TaskState {
