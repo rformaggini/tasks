@@ -3,8 +3,8 @@ import 'dart:math';
 
 import 'package:tasks/data/models/task_model.dart';
 import 'package:tasks/data/repositories/task_repository.dart';
-import 'package:tasks/pages/bloc/task_event.dart';
-import 'package:tasks/pages/bloc/task_state.dart';
+import 'package:tasks/pages/home/bloc/task_event.dart';
+import 'package:tasks/pages/home/bloc/task_state.dart';
 
 class TaskBloc {
   final TaskRepository _taskRepository = TaskRepository();
@@ -23,6 +23,7 @@ class TaskBloc {
 
   void _mapEventToState(TaskEvent event) async {
     List<TaskModel> tasks = [];
+    
     _outputTaskController.add(TaskLoadingState());
 
     if (event is GetTasksEvent) {
