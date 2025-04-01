@@ -1,4 +1,4 @@
-import 'package:tasks/data/models/task_model.dart';
+import 'package:tasks/features/home/data/models/task_model.dart';
 
 class TaskRepository {
   final List<TaskModel> _tasks = [];

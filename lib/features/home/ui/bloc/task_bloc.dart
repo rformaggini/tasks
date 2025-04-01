@@ -1,10 +1,10 @@
 import 'dart:async';
 import 'dart:math';
 
-import 'package:tasks/data/models/task_model.dart';
-import 'package:tasks/data/repositories/task_repository.dart';
-import 'package:tasks/pages/home/bloc/task_event.dart';
-import 'package:tasks/pages/home/bloc/task_state.dart';
+import 'package:tasks/features/home/data/models/task_model.dart';
+import 'package:tasks/features/home/data/repositories/task_repository.dart';
+import 'package:tasks/features/home/ui/bloc/task_event.dart';
+import 'package:tasks/features/home/ui/bloc/task_state.dart';
 
 class TaskBloc {
   final TaskRepository _taskRepository = TaskRepository();

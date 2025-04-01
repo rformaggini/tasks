@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:tasks/pages/home/bloc/task_bloc.dart';
-import 'package:tasks/pages/home/bloc/task_event.dart';
-import 'package:tasks/pages/home/bloc/task_state.dart';
+import 'package:tasks/features/home/ui/bloc/task_bloc.dart';
+import 'package:tasks/features/home/ui/bloc/task_event.dart';
+import 'package:tasks/features/home/ui/bloc/task_state.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
